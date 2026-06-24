@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurunandanam Stores | Parappadu, Areekara</title>
+    <!-- Google Fonts for a professional look -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Gurunandanam Stores</h1>
+            <p class="location">📍 Parappadu, Areekara</p>
+            <p class="tagline">Your trusted local store for quality everyday essentials.</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <div class="search-bar">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="searchInput" placeholder="Search for groceries, household items...">
+            </div>
+        </div>
+        
+        <div class="product-grid" id="product-list">
+            <!-- Items will load here -->
+            <div class="loading">Loading our fresh inventory...</div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> Gurunandanam Stores. All Rights Reserved.</p>
+            <p class="footer-address">Parappadu, Areekara, Kerala</p>
+        </div>
+    </footer>
+
+    <!-- Firebase SDK -->
+    <script type="module" src="app.js"></script>
+    <script>
+        // Auto-update copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
